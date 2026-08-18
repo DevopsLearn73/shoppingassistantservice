@@ -3,14 +3,14 @@ agent any
 
 
 environment {
-    IMAGE_NAME = "manojkrishnappa/shoppingassistantservice:${GIT_COMMIT}"
+    IMAGE_NAME = "rohitkube/shoppingassistantservice:${GIT_COMMIT}"
 }
 
 stages {
 
     stage('Git Checkout') {
         steps {
-            git url: 'https://github.com/ITkannadigaru/shoppingassistantservice.git', branch: 'main'
+            git url: 'https://github.com/DevopsLearn73/shoppingassistantservice.git', branch: 'main'
         }
     }
 
